@@ -4,14 +4,14 @@ import { BigDecimal, Address, BigInt, log } from '@graphprotocol/graph-ts/index'
 import { ZERO_BD, factoryContract, ADDRESS_ZERO, ONE_BD } from './helpers'
 
 let WFTM_ADDRESS = '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83'
-let WFTM_USDC_ADDRESS = '0x160653F02b6597E7Db00BA8cA826cf43D2f39556'
+let WFTM_USDC_ADDRESS = '0x160653f02b6597e7db00ba8ca826cf43d2f39556'
 let USDC = '0x04068da6c83afcfa0e13ba15a6696662335d5b75'
 
 let WHITELIST: string[] = [
-  '0x1120e150dA9def6Fe930f4fEDeD18ef57c0CA7eF', // SOUL
-  '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', //WFTM
-  '0x04068da6c83afcfa0e13ba15a6696662335d5b75', //USDC
-  '0x049d68029688eabf473097a2fc38ef61633a3c7a' //fUSDT
+  '0x1120e150da9def6fe930f4feded18ef57c0ca7ef', // SOUL
+  '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', // WFTM
+  '0x04068da6c83afcfa0e13ba15a6696662335d5b75', // USDC
+  '0x049d68029688eabf473097a2fc38ef61633a3c7a' // fUSDT
 ]
 
 export function getEthPriceInUSD(): BigDecimal {
@@ -28,7 +28,7 @@ export function getEthPriceInUSD(): BigDecimal {
 }
 
 // minimum liquidity required to count towards tracked volume for pairs with small # of Lps
-let MINIMUM_USD_THRESHOLD_NEW_PAIRS = BigDecimal.fromString('3000')
+let MINIMUM_USD_THRESHOLD_NEW_PAIRS = BigDecimal.fromString('1000')
 
 // minimum liquidity for price to get tracked
 let MINIMUM_LIQUIDITY_THRESHOLD_ETH = BigDecimal.fromString('5')

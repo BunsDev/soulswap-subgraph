@@ -8,7 +8,7 @@ dataSources:
     name: Factory
     network: fantom
     source:
-      address: "0x1120e150dA9def6Fe930f4fEDeD18ef57c0CA7eF"
+      address: "0x1120e150da9def6fe930f4feded18ef57c0ca7ef"
       abi: Factory
       startBlock: 16108819
     mapping:
